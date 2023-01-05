@@ -6,6 +6,9 @@
   "engines": {
     "node": ">=8.0.0"
   },
+  "files": [
+    "src/*.js"
+  ],
   "keywords": [
     "bip",
     "schnorr",
