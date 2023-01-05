@@ -1,7 +1,7 @@
 const BigInteger = require('bigi');
 const Buffer = require('safe-buffer').Buffer;
 const ecurve = require('ecurve');
-const randomBytes = require('randombytes');
+const { randomBytes } = require('@exodus/crypto/randomBytes');
 const curve = ecurve.getCurveByName('secp256k1');
 const check = require('./check');
 const convert = require('./convert');

@@ -1,7 +1,7 @@
 const schnorr = require('../src/index');
 const Benchmark = require('benchmark');
 const microtime = require('microtime');
-const randomBytes = require('randombytes');
+const { randomBytes } = require('@exodus/crypto/randomBytes');
 const BigInteger = require('bigi');
 const Buffer = require('safe-buffer').Buffer;
 const ecurve = require('ecurve');

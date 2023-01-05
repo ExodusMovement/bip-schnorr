@@ -1,6 +1,5 @@
 const BigInteger = require('bigi');
-const Buffer = require('safe-buffer').Buffer;
-const sha256 = require('js-sha256');
+const shajs = require('sha.js');
 
 function bufferToInt(buffer) {
   return BigInteger.fromBuffer(buffer);
@@ -11,7 +10,7 @@ function intToBuffer(bigInteger) {
 }
 
 function hash(buffer) {
-  return Buffer.from(sha256.create().update(buffer).array());
+  return shajs('sha256').update(buffer).digest();
 }
 
 module.exports = {

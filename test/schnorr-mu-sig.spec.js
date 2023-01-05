@@ -6,7 +6,7 @@ const convert = require('../src/convert');
 const muSig = require('../src/mu-sig');
 const schnorr = require('../src/schnorr');
 const math = require('../src/math');
-const randomBytes = require('randombytes');
+const { randomBytes } = require('@exodus/crypto/randomBytes');
 const ecurve = require('ecurve');
 
 const curve = ecurve.getCurveByName('secp256k1');
